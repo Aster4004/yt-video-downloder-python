@@ -1,0 +1,86 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #85a9e6; /* Light gray background */
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 400px;
+}
+
+header {
+  background: #4285f4; /* Google blue color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #3c7acf; /* Slightly darker shade for border */
+}
+
+form {
+  padding: 20px;
+}
+
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  background: #3c7acf; /* Slightly darker shade on hover */
+}
+
+.loading-container {
+  text-align: center;
+  color: #333; /* Dark gray text color */
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #4285f4; /* Google blue color */
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 18px;
+  color: #4CAF50; /* Green color */
+}
